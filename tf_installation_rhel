@@ -7,6 +7,9 @@
  #unzip terraform_0.11.1_linux_amd64.zip -d /usr/bin/terraform
  //This will unzip the terraform file on the path /usr/bin/terraform
 
+ //in case unzip is not installed - use below command to install zip and unzip packages - this is for RHEL
+ #sudo yum install zip unzip -y
+ 
  
  #cd /usr/bin/terraform
  // Now we have to set path to execute terraform from anywhere
