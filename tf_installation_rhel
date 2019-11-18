@@ -1,0 +1,18 @@
+ //Download the terraform zip file from below path (this patch will change as pe the latest releases, 
+ //to get the latest path - search "Download terrafrom" in google - open the download page - righ click the link to download tf zip and select copy link address and paste below
+ 
+ #curl -O https://releases.hashicorp.com/terraform/0.12.15/terraform_0.12.15_linux_amd64.zip
+ #mkdir /usr/bin/terraform
+ 
+ #unzip terraform_0.11.1_linux_amd64.zip -d /usr/bin/terraform
+ //This will unzip the terraform file on the path /usr/bin/terraform
+
+ 
+ #cd /usr/bin/terraform
+ // Now we have to set path to execute terraform from anywhere
+ 
+ #echo $"export PATH=\$PATH:$(pwd)" >> ~/.bash_profile
+ #source ~/.bash_profile
+ 
+ ------end--------
+ 
